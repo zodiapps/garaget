@@ -1,4 +1,3 @@
-import { Head } from 'next/document';
 import styled from 'styled-components';
 
 const StyledIndexPage = styled.div`
