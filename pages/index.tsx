@@ -16,12 +16,11 @@ const StyledIndexPage = styled.div`
     background-color: #ec449b;
   }
   main {
-    flex: 1;
-    overflow: hidden;
-    .image-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
+    width: 100%;
+    height: 100%;
+    background: url('/logo.jpg');
+    background-size: contain;
+    background-repeat: round;
   }
   footer {
     background-color: #ffa200;
@@ -29,26 +28,12 @@ const StyledIndexPage = styled.div`
   }
 `;
 
-const LogoImg = styled.img`
-  display: block;
-  flex: 1;
-  max-width: 100vw;
-  max-height: 100%;
-  width: 400px;
-`;
-
 const IndexPage = () => (
   <StyledIndexPage>
     <header>
       <h1>Sharpshooters present</h1>
     </header>
-    <main>
-      <div className="image-container">
-        <LogoImg src="logo.jpg"></LogoImg>
-        <LogoImg src="logo.jpg"></LogoImg>
-        <LogoImg src="logo.jpg"></LogoImg>
-      </div>
-    </main>
+    <main></main>
     <footer>
       <h1>GBG 2021</h1>
     </footer>
