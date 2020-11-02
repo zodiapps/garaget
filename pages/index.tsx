@@ -18,7 +18,7 @@ const StyledIndexPage = styled.div`
   main {
     width: 100%;
     height: 100%;
-    background: url('/logo.jpg');
+    background: url('/logo.png');
     background-size: contain;
     background-repeat: round;
   }
