@@ -31,7 +31,7 @@ const StyledIndexPage = styled.div`
 const IndexPage = () => (
   <StyledIndexPage>
     <header>
-      <h1>Sharpshooters present</h1>
+      <h1>Sharpshooters presents</h1>
     </header>
     <main></main>
     <footer>
