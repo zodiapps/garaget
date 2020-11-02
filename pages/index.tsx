@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledIndexPage = styled.div`
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;

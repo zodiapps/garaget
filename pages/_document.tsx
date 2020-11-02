@@ -32,7 +32,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Klubb Garaget – musiker i Göteborg</title>
           <meta name="title" content="Klubb Garaget – musiker i Göteborg" />
           <meta name="description" content="Arrangerar spelningar för Göteborgs okända artister." />
           <link

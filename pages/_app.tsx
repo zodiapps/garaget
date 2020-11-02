@@ -4,7 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html {
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
   }
   
   html,
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
     min-height: 100vh;
     /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
+    /* min-height: -webkit-fill-available; */
   }
 
   * {
