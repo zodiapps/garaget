@@ -1,6 +1,5 @@
 import { AppProps } from 'next/app';
-import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -9,17 +8,22 @@ const GlobalStyle = createGlobalStyle`
   
   html,
   body {
+    height: 100%;
     padding: 0;
     margin: 0;
+    font-size: 1.125rem;
     font-family: Staatliches, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
       Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     line-height: 1.6;
     background-color: #000;
-
-    min-height: 100vh;
-    /* mobile viewport bug fix */
-    /* min-height: -webkit-fill-available; */
   }
+  
+  #__next {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
 
   * {
     box-sizing: border-box;
@@ -36,11 +40,21 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const theme = {
+  colors: {
+    purple: '#ec449b',
+    orange: '#ffa200',
+    red: '#772609',
+  },
+};
+
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }
