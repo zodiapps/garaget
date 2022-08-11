@@ -16,7 +16,7 @@ const StyledMain = styled.main`
   align-items: center;
 
   .box {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     padding: 7vh 5vw;
     clip-path: polygon(
       4vw 4vh,
@@ -32,6 +32,10 @@ const StyledMain = styled.main`
     a {
       text-decoration: none;
       color: ${(p) => p.theme.colors.purple};
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .premiere {
@@ -55,19 +59,22 @@ const IndexPage = () => (
     <StyledMain>
       <div className="box">
         <h2>
-          En återkommande klubb i Göteborg för alla som fastnat i replokalen och behöver en scen att
-          stå på
+          En återkommande klubb i Göteborg
+          <br />
+          för alla som fastnat i replokalen och behöver en scen att stå på
         </h2>
         <h3>Vill du spela?</h3>
         <p>
-          <a href="mailto:lromleborg.band@gmail.com">Maila oss</a> med en beskrivning av
+          <a href="mailto:romleborg.band@gmail.com">Maila oss</a> med en beskrivning av
           bandet/projektet
         </p>
         <p>
           Vi prioriterar band som inte har så stor gig-erfarenhet men vi diskriminerar inte andra
         </p>
         <p>Alla genres välkomna</p>
-        <p className="premiere">PREMIÄR 20 augusti 2022 - Konstkollektivet</p>
+        <a href="https://fb.me/e/2GlP0Imo2" className="premiere" rel="noopener">
+          PREMIÄR 20 augusti 2022 - Konstkollektivet
+        </a>
       </div>
     </StyledMain>
     <StyledFooter>
