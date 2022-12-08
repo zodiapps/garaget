@@ -54,7 +54,7 @@ const StyledFooter = styled.footer`
 const IndexPage = () => (
   <>
     <StyledHeader>
-      <h1>Sharpshooters presents</h1>
+      <h1>Sharpshooters present</h1>
     </StyledHeader>
     <StyledMain>
       <div className="box">
@@ -72,13 +72,13 @@ const IndexPage = () => (
           Vi prioriterar band som inte har så stor gig-erfarenhet men vi diskriminerar inte andra
         </p>
         <p>Alla genres välkomna</p>
-        <a href="https://fb.me/e/2GlP0Imo2" className="premiere" rel="noopener">
-          PREMIÄR 20 augusti 2022 - Konstkollektivet
+        <a href="https://fb.me/e/4uNc1nRxs" className="premiere" rel="noopener">
+          18 januari 2023 - Crippas Café
         </a>
       </div>
     </StyledMain>
     <StyledFooter>
-      <h1>GBG 2022</h1>
+      <h1>GBG 2023</h1>
     </StyledFooter>
   </>
 );
